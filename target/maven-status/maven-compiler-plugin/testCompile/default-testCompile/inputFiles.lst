@@ -1,7 +1,7 @@
-C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\appium\MobileTesting\AppiumSetup.java
-C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\appium\MobileTesting\MobileActions.java
-C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\appium\MobileTesting\AppiumProgramScheduler.java
-C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\appium\MobileTesting\Logintest.java
-C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\appium\MobileTesting\MobileUI.java
-C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\appium\MobileTesting\WhatsAppWeb.java
-C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\appium\MobileTesting\clipboardtest.java
+C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\com\Actions\AppiumProgramScheduler.java
+C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\com\Actions\MobileActions.java
+C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\com\appium\Test\TestLogin.java
+C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\com\Actions\AppiumSetup.java
+C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\com\Actions\WhatsAppWeb.java
+C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\com\Actions\clipboardtest.java
+C:\Users\0047HE744\Desktop\Personal\MyLearning\AppiumTesting\MobileTesting\src\test\java\com\Actions\MobileUI.java
