@@ -111,9 +111,16 @@ public class AppiumSetup {
   	  options.setDeviceName("emulatortest2");
   	  options.setCapability("autoGrantPermissions", "true");
   	  //options.setCapability("locationCoordinate", "28.47, 77.05");
+<<<<<<< HEAD:src/test/java/com/Actions/AppiumSetup.java
   	  options.setApp(System.getProperty("user.dir") + "/consumer-app.apk");
 
   	  //options.setApp("C://Users//0047HE744//Desktop//Personal//MyLearning//AppiumTesting//MobileTesting//consumer-app.apk");
+=======
+  	  //options.setCapability("locationCoordinate", "28.47, 77.05");
+  	  //options.setApp("C://Users//0047HE744//Desktop//Personal//MyLearning//AppiumTesting//MobileTesting//consumer-app.apk");
+  	  options.setApp(System.getProperty("user.dir") + "/consumer-app.apk");
+
+>>>>>>> ea2465ad2fffcdafc79d827c8483d7f4f76fc277:src/test/java/appium/MobileTesting/AppiumSetup.java
   	  AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), options);
 
   	  return driver;

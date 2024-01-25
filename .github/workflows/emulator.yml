@@ -1,29 +1,31 @@
-name: Appium test 
+name: Android Emulator
 
-on:
-  workflow_dispatch:
-    
+on: 
+    workflow_dispatch:
 
 jobs:
-  build-and-test:
+  build:
     runs-on: macos-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Set up Appium
-        run: |
-          npm install -g appium@2
-          appium -v
-          appium &>/dev/null &
-
-      - name: Set up UIAutomator2
-        run: |
-          appium driver install uiautomator2
-  
-      - name: run tests
-        uses: reactivecircus/android-emulator-runner@v2
+      - name: Set up JDK
+        uses: actions/setup-java@v2
         with:
-          api-level: 29
-          script: mvn clean test
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Accept Android licenses
+        run: yes | sdkmanager --licenses
+
+      - name: Create Emulator
+        run: |
+          echo no | avdmanager create avd -n custom_emulator -k "system-images;android-30;google_apis;x86_64" --force
+
+      - name: Start Emulator
+        run: |
+          emulator -avd custom_emulator -no-window -no-snapshot -noaudio -no-boot-anim
+        env:
+          PATH: $ANDROID_HOME/emulator:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH

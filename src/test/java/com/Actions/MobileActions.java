@@ -23,7 +23,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class MobileActions {
 
 		public static WebElement getWhenVisible(By locator, AndroidDriver driver) {
-		int timeout = 60;
+		int timeout = 120;
 		WebElement element;
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 		element = wait.until(ExpectedConditions
@@ -72,9 +72,18 @@ public class MobileActions {
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
         // Replace this path with your image file's path
+<<<<<<< HEAD:src/test/java/com/Actions/MobileActions.java
         //String imagePath = "C://Users//0047HE744//Desktop//Personal//MyLearning//AppiumTesting//MobileTesting//test-result.png";
 
 		String imagePath = System.getProperty("user.dir") + "/test-result.png";
+=======
+
+        //String imagePath = "C://Users//0047HE744//Desktop//Personal//MyLearning//AppiumTesting//MobileTesting//test-result.png";
+		String imagePath = System.getProperty("user.dir") + "/test-result.png";
+
+
+
+>>>>>>> ea2465ad2fffcdafc79d827c8483d7f4f76fc277:src/test/java/appium/MobileTesting/MobileActions.java
 
         try {
             // Save the screenshot to the desired location (overwrite the existing file)
@@ -86,17 +95,27 @@ public class MobileActions {
 
 	}
 	public static void login(AndroidDriver driver) throws IOException, InterruptedException {
+<<<<<<< HEAD:src/test/java/com/Actions/MobileActions.java
 		//String path = createScreenshotsFolder("C://Users//0047HE744//Desktop//Personal//MyLearning//AppiumTesting//MobileTesting//Results");
 		String path = createScreenshotsFolder(System.getProperty("user.dir") + "/Results");
+=======
+
+		//String path = createScreenshotsFolder("C://Users//0047HE744//Desktop//Personal//MyLearning//AppiumTesting//MobileTesting//Results");
+		String path = createScreenshotsFolder(System.getProperty("user.dir") + "/Results");
+		//MobileUI.btn_newcon(driver).isDisplayed();
+>>>>>>> ea2465ad2fffcdafc79d827c8483d7f4f76fc277:src/test/java/appium/MobileTesting/MobileActions.java
 		//takeScreenshot(driver,path);
 		MobileUI.btn_menu(driver).click();
+		testResult(driver);
 		//takeScreenshot(driver,path);
 		MobileUI.btn_login(driver).click();
-		//takeScreenshot(driver,path);
+		takeScreenshot(driver,path);		
+
 		MobileUI.btn_username(driver).sendKeys("9445332945");
 		MobileUI.btn_password(driver).sendKeys("Venki00*");
-		
+		takeScreenshot(driver,path);
 		MobileUI.btn_submit(driver).click();
+		
 		takeScreenshot(driver,path);
 		MobileUI.btn_locateus(driver).click();
 		takeScreenshot(driver,path);
@@ -108,6 +127,6 @@ public class MobileActions {
 			e.printStackTrace();
 		}
 		testResult(driver);
-		WhatsAppWeb.whatsappAutomation();
+		//WhatsAppWeb.whatsappAutomation();
 	}
 }

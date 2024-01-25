@@ -31,6 +31,9 @@ public class TestLogin{
 	  //login
 	  MobileActions.login(driver);
   }
+<<<<<<< HEAD:src/test/java/com/appium/Test/TestLogin.java
   
+=======
+>>>>>>> ea2465ad2fffcdafc79d827c8483d7f4f76fc277:src/test/java/appium/MobileTesting/Logintest.java
 }
 
