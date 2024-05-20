@@ -22,6 +22,9 @@
 
          - name: Check Network Connectivity
            run: ping -c 4 google.com
+
+         - name: Check Chrome Version
+           run: google-chrome --version
   
          - name: Run tests
            run: mvn clean test
