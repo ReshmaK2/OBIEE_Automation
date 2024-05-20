@@ -1,9 +1,0 @@
-com\appium\Test\TestLogin.class
-com\Actions\MobileActions.class
-com\Actions\AppiumProgramScheduler$1.class
-com\Actions\AppiumSetup.class
-com\Actions\clipboardtest.class
-com\Actions\MobileUI.class
-com\Actions\AppiumProgramScheduler.class
-com\Actions\TransferableImage.class
-com\Actions\WhatsAppWeb.class
