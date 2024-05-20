@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-20T13:53:47 IST" name="Default suite" finished-at="2024-05-20T13:54:18 IST" duration-ms="30861">
+  <suite started-at="2024-05-20T15:30:15 IST" name="Default suite" finished-at="2024-05-20T15:31:01 IST" duration-ms="45422">
     <groups>
     </groups>
-    <test started-at="2024-05-20T13:53:47 IST" name="Default test" finished-at="2024-05-20T13:54:18 IST" duration-ms="30861">
+    <test started-at="2024-05-20T15:30:15 IST" name="Default test" finished-at="2024-05-20T15:31:01 IST" duration-ms="45422">
       <class name="com.ibm.Logintest">
-        <test-method signature="OBIEE()[pri:0, instance:com.ibm.Logintest@3bf9ce3e]" started-at="2024-05-20T13:53:47 IST" name="OBIEE" finished-at="2024-05-20T13:54:18 IST" duration-ms="30826" status="PASS">
+        <test-method signature="OBIEE()[pri:0, instance:com.ibm.Logintest@2c35e847]" started-at="2024-05-20T15:30:15 IST" name="OBIEE" finished-at="2024-05-20T15:31:01 IST" duration-ms="45359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OBIEE -->
