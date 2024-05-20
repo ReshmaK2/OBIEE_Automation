@@ -14,6 +14,7 @@ public class Logintest {
 	@Test
 	public static void OBIEE() throws InterruptedException, IOException {
 
+		System.setProperty("webdriver.chrome.driver", "C:\SeleniumWebDrivers\ChromeDriver");
 
 		driver = new ChromeDriver();
 
