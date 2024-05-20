@@ -24,7 +24,7 @@
            run: ping -c 4 google.com
 
          - name: Check Chrome Version
-           run: google-chrome --version
+           run: mdls -name kMDItemVersion /Applications/Google\ Chrome.app | awk 'NR==3{print $3}'
   
          - name: Run tests
            run: mvn clean test
