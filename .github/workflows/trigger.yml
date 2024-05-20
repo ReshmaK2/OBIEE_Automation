@@ -1,0 +1,42 @@
+  name: Trigger every 10 mins between 5 to 7 am
+  
+  on:
+    schedule:
+      - cron: '*/10 5-7 * * *'
+      
+    workflow_dispatch:  
+  
+  jobs:
+    build-and-test:
+      runs-on: macos-latest
+  
+      steps:
+         - name: Set up Java 11
+           uses: actions/setup-java@v4
+           with:
+              distribution: 'temurin'
+              java-version: '11'
+              
+         - name: Checkout code
+           uses: actions/checkout@v3
+
+         - name: Check Network Connectivity
+           run: ping -c 4 google.com
+  
+         - name: Run tests
+           run: mvn clean test
+                    
+         - name: Upload Test Screenshot
+           if: always() 
+           uses: actions/upload-artifact@v2
+           with:
+            name: Screenshots
+            path: Results/ 
+  
+         - name: Download artifacts
+           if: always() 
+           uses: actions/download-artifact@v2
+           with:
+            name: Screenshots
+            path: Results/
+  
