@@ -12,8 +12,6 @@ public class Logintest {
 	@Test
     public static void OBIEE() throws InterruptedException, IOException {
  
-    	String chromeDriverPath = System.getProperty("user.dir") + "/src/resources/chromedriver.exe";
-    	System.setProperty("webdriver.chrome.driver", chromeDriverPath);
         driver = new ChromeDriver();
 
         //EX portal
