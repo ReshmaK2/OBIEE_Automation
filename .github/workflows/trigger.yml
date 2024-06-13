@@ -1,8 +1,8 @@
 name: Trigger every 10 mins between 5 to 7 am
   
 on:
-  schedule:
-    - cron: '*/10 5-7 * * *'
+  # schedule:
+  #   - cron: '*/10 5-7 * * *'
     
   workflow_dispatch:  
   
